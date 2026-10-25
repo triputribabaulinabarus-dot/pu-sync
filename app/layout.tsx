@@ -7,12 +7,13 @@ export const metadata: Metadata = {
   description: "Integrated Emergency and Student Portal",
 };
 
-export default function RootLayout({
+export default function MedicalIDLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
-  return (
+}) {
+  return <>{children}</>;
+}
     <html lang="en">
       <body className="min-h-screen bg-blue-950 text-white flex flex-col antialiased">
         
@@ -54,10 +55,9 @@ export default function RootLayout({
 
         {/* Dynamic content page changes here */}
         <div className="flex-1 w-full flex items-center justify-center">
-          {children}
         </div>
 
       </body>
     </html>
-  );
-}
+
+
