@@ -1,8 +1,8 @@
 'use client';
+export const dynamic = 'force-dynamic';
 import { useState, useEffect, ReactNode } from 'react';
 import { useParams } from 'next/navigation';
 import { supabase } from '../../../supabaseClient';
-
 export default function MedicalID() {
   const params = useParams();
   const [profile, setProfile] = useState<any>(null);
